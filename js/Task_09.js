@@ -14,7 +14,7 @@ for (let counter = 1; counter <= userNumber; counter++) {
     divider = userNumber / counter;
 
     if (parseInt(divider) === divider) {
-        console.log('Dividers: ' + divider);
+        console.log('Divider: ' + divider);    
     } 
 
     if (divider % 2 === 0) {
@@ -24,7 +24,7 @@ for (let counter = 1; counter <= userNumber; counter++) {
     }   
 }
 
-console.log('Sum of dividers: ' + sum);
+console.log('Sum of even even dividers: ' + sum);
 
 
 
