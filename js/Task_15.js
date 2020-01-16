@@ -6,12 +6,19 @@
 let userNumber = parseInt(prompt('Enter the number'));
 let givenNumber = 3;
 let result;
+let degree;
 
 for (let count = 1; count <= userNumber; count++) {
-    result = givenNumber ** count;
 
-    if (result === userNumber) {
-        document.write(givenNumber + ' in ' + count + ' degree ' + ' = ' + userNumber);
+    if (givenNumber ** count === userNumber) {
+        result = userNumber;
+        degree = count;
     }
-
 }
+
+if (result === userNumber) {
+    document.write('3 in ' + degree + ' = ' + userNumber + '<br>');
+} else {
+    document.write(userNumber + ' cannot be obtained by exponentiation ' + givenNumber + ' to any degree' + '<br>')
+}
+
