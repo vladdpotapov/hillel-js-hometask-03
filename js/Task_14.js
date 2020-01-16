@@ -9,13 +9,13 @@ let rest = true;
 
 for (let count = 2; count < userNumber; count++) {
     
-    if (userNumber < 1 || userNumber % count === 0) {
+    if (userNumber <= 1 || userNumber % count === 0) {
         rest = false;
     }
 }
 
-if (rest === false) {
-    document.write('The number: ' + userNumber + ' is not prime');
+if (userNumber > 1 && rest === true) {
+    document.write('The number: ' + userNumber + ' is prime'); 
 } else {
-    document.write('The number: ' + userNumber + ' is prime');
+    document.write('The number: ' + userNumber + ' is not prime');
 }
